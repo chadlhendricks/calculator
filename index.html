@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./images/calculator_favicon.png">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="calculator" style="text-align: center; padding-top: 100px; background-color: blue; width: 35%; margin: auto; margin-top: 90px; padding: 30px; border-radius: 5%">
+
+        <h1 class="text-warning"><strong>CASIO</strong></h1><br>
+
+        <div style="font-size: 60px;">
+
+            <div class="row">
+                <div class="col-12" id="output" style="width: 80%; margin: auto;"></div>
+            </div>  
+
+            <div style="padding-top: 80px;">
+                <div class="row">
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('1')">1</button></div>
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('2')">2</button></div>
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('3')">3</button></div>
+                    <div class="col-3"><button class="btn btn-success" onclick="addToSum('+')">+</button></div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('4')">4</button></div>
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('5')">5</button></div>
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('6')">6</button></div>
+                    <div class="col-3"><button class="btn btn-success" onclick="addToSum('-')">-</button></div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('7')">7</button></div>
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('8')">8</button></div>
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('9')">9</button></div>
+                    <div class="col-3"><button class="btn btn-success" onclick="addToSum('*')">x</button></div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('0')">0</button></div>
+                    <div class="col-3"><button class="btn btn-dark" onclick="addToSum('.')">.</button></div>
+                    <div class="col-3"><button class="btn btn-success" onclick="evaluateSum()">=</button></div>
+                    <div class="col-3"><button class="btn btn-success" onclick="addToSum('/')">/</button></div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-6"><button class="btn btn-warning" onclick="backspace()">Backspace</button></div> 
+                    <div class="col-6"><button class="btn btn-danger" onclick="clearSum()">Clear</button></div>
+                </div>    
+            </div>
+
+            
+          
+        </div>
+
+    </div>
+
+
+        
+
+<!--JAVASCRIPT BUNDLE-->
+     <script src="./script.js"></script>
+     <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
